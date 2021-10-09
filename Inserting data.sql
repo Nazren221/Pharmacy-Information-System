@@ -734,4 +734,3 @@ Values(1109,'card','2021-02-04',38 ,16974221   ,578123);
 Insert INTO payment
 Values(2111,'cash','2021-02-06',37.42 ,23014771     ,578123);
 
-select*from medicine
