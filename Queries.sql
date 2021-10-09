@@ -1,5 +1,5 @@
 -- -----QUERIES
--- 1   print all sales from pharmaccy for monthly ( we know  orders can contains multiple medicines) 
+-- 1   print all sales from pharmacy for monthly ( we know  orders can contains multiple medicines) 
 
 SELECT COUNT(contains.MedicineID) as Sales, EXTRACT(MONTH FROM Order_date) AS Month
 From contains
@@ -13,7 +13,7 @@ FROM medicine
 LEFT JOIN production ON medicine.Barcode=production.Barcode
 LEFT JOIN company ON production.CompanyID=company.Company_id;
 
--- 3 Print Medicine from Germany, RUSSIAN
+-- 3 Print Medicine from Germany, Russia
 
 SELECT medicine.Barcode, medicine.Name, medicine.Type, medicine.Price, medicine.Stock, company.Country
 FROM medicine
